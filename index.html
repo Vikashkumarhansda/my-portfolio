@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+</html>
+
+<head>
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero">
+
+    <div class="hero-text">
+        <p class="welcome">WELCOME TO MY WEBSITE</p>
+
+        <h1>Hello, I'm <span>Vikash</span></h1>
+
+        <h2>I'm Learning Web Development</h2>
+
+        <p>
+            I'm a beginner learning HTML, CSS and JavaScript.
+            This is my first personal website.
+        </p>
+
+        <button onclick="sayHello()">Say Hello</button>
+
+        <a href="resume.pdf" download class="cv-button">Download CV</a>
+    
+    </div>
+
+    <div class="hero-image">
+        <img src="vikash.jpg" alt="My Photo">
+    </div>
+
+</section>
+
+    <section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        Hello! My name is Vikash. I am a beginner learning
+        web development. I am currently learning HTML, CSS
+        and JavaScript to create modern and useful websites.
+    </p>
+
+    <p>
+        My goal is to improve my coding skills and build
+        professional websites in the future.
+    </p>
+
+</section>
+
+    <section id="skills" class="skills">
+
+    <h2>My Skills</h2>
+
+    
+    <div class="skill-container">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>I use HTML to create the structure of websites.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>I use CSS to design and style websites.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>I use JavaScript to make websites interactive.</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p><strong>Name:</strong> Vikash Kumar Hnasda</p>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:vikashkumarhansda7@gmail.com">
+            vikashkumarhansda7@gmail.com
+        </a>
+    </p>
+
+    <div class="social-links">
+
+    <a href="https://www.instagram.com/vikash_zone?igsh=NzN0NmFpMWowYXJu" target="_blank">Instagram</a>
+
+    <a href="https://x.com/I__am__vkumar" target="_blank">X</a>
+
+    <a href="https://www.facebook.com/share/1bas6mvh37/" target="_blank">Facebook</a>
+
+</div>
+
+    <form onsubmit="sendMessage(); return false;">
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Vikash Kumar Hansda. All Rights Reserved.</p>
+    <p>Built with HTML, CSS & JavaScript.</p>
+</footer>
+
+    <script src="script.js"></script>
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>If you would like to contact me, feel free to send me an email.</p>
+
+    <a href="mailto:vikashkumarhansda7@gmail.com" class="contact-button">
+        Email Me
+    </a>
+</section>
+
+
+</body>
+
+</html>
