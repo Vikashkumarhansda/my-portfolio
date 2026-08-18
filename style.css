@@ -161,7 +161,8 @@ section {
 }
 
 .contact {
-    background-color: white;
+    background-color: #1e1e1e;  /* white ki jagah dark */
+    color: white;               /* ye line new add karo */
     max-width: 700px;
     margin: 60px auto;
     padding: 50px;
@@ -171,7 +172,7 @@ section {
 
 .contact h2 {
     font-size: 40px;
-    color: darkblue;
+    color: white;
     margin-bottom: 30px;
 }
 
@@ -190,6 +191,12 @@ section {
     font-family: Arial, sans-serif;
 }
 
+.contact input,
+.contact textarea {
+    color: white;
+    background: #2e2e2e;
+}
+
 .contact textarea {
     height: 150px;
     resize: vertical;
@@ -198,6 +205,17 @@ section {
 .contact button {
     align-self: center;
     cursor: pointer;
+    background: #ff4757;   /* red color */
+    color: white;          /* text white */
+    padding: 12px 25px;    /* button bada */
+    border: none;          /* border hatao */
+    border-radius: 8px;    /* gol kona */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background: #e84118;   /* hover pe dark red */
 }
 
 html {
