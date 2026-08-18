@@ -330,13 +330,27 @@ footer p {
   padding: 20px;
   margin: 20px 0;
   border-radius: 15px;
+  text-align: center;
 }
+
+.project h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
 .project a {
   background: #ff4757;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
 }
 
 
