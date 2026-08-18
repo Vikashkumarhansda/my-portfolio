@@ -113,15 +113,12 @@
 
 </div>
 
-    <form onsubmit="sendMessage(); return false;">
-
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
+ <form onsubmit="sendMessage(); return false;">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+</form>   
 </section>
 
 <footer>
@@ -131,15 +128,25 @@
 
     <script src="script.js"></script>
 
-    <section id="contact">
-    <h2>Contact Me</h2>
+  <section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you would like to contact me, fill this form 👇</p>
+  
+  <div class="contact">
+    <form action="https://formsubmit.co/vikashkumarhansda7@gmail.com" method="POST">
+      
+      <input type="text" name="name" placeholder="Your Name" required>
+      
+      <input type="email" name="email" placeholder="Your Email" required>
+      
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
 
-    <p>If you would like to contact me, feel free to send me an email.</p>
+    </form>
+  </div>
 
-    <a href="mailto:vikashkumarhansda7@gmail.com" class="contact-button">
-        Email Me
-    </a>
-</section>
+</section>  
 
 
 </body>
