@@ -1,35 +1,30 @@
+/* =========================
+   GENERAL
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0;
     background-color: lightblue;
     text-align: center;
     font-family: Arial, sans-serif;
+    color: #222;
 }
 
-h1 {
-    color: darkblue;
-    font-size: 40px;
-}
-
+h1,
+h2,
+h3,
 p {
-    color: black;
-    font-size: 20px;
+    margin-top: 0;
 }
 
-button {
-    background-color: darkblue;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-}
 
-img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid white;
-} 
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
     background-color: darkblue;
@@ -53,10 +48,20 @@ nav a:hover {
     color: lightblue;
 }
 
+
+/* =========================
+   SECTIONS
+========================= */
+
 section {
     padding: 40px;
     margin: 30px 0;
 }
+
+
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero {
     min-height: 500px;
@@ -81,6 +86,7 @@ section {
 .hero h1 {
     font-size: 50px;
     margin: 10px 0;
+    color: #222;
 }
 
 .hero h1 span {
@@ -94,6 +100,7 @@ section {
 
 .hero-text p {
     line-height: 1.6;
+    font-size: 18px;
 }
 
 .hero-image img {
@@ -103,6 +110,40 @@ section {
     border-radius: 50%;
     border: 8px solid white;
 }
+
+
+/* =========================
+   GENERAL IMAGE
+========================= */
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000066;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
 
 .about {
     background-color: white;
@@ -125,12 +166,18 @@ section {
     color: #333;
 }
 
-.skills {
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+#skills {
     padding: 60px 20px;
     text-align: center;
+    background-color: #f5f5f5;
 }
 
-.skills h2 {
+#skills h2 {
     font-size: 40px;
     color: darkblue;
     margin-bottom: 40px;
@@ -149,6 +196,11 @@ section {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
 }
 
 .skill-card h3 {
@@ -160,9 +212,52 @@ section {
     line-height: 1.6;
 }
 
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.project {
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.project h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.project a {
+    background: #ff4757;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project a:hover {
+    background: #e84118;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
 .contact {
-    background-color: #1e1e1e;  /* white ki jagah dark */
-    color: white;               /* ye line new add karo */
+    background-color: white;
     max-width: 700px;
     margin: 60px auto;
     padding: 50px;
@@ -172,7 +267,7 @@ section {
 
 .contact h2 {
     font-size: 40px;
-    color: white;
+    color: darkblue;
     margin-bottom: 30px;
 }
 
@@ -184,17 +279,21 @@ section {
 
 .contact input,
 .contact textarea {
+    box-sizing: border-box;
+    width: 100%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
     font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
 }
 
-.contact input,
-.contact textarea {
-    color: white;
-    background: #2e2e2e;
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: darkblue;
 }
 
 .contact textarea {
@@ -204,25 +303,100 @@ section {
 
 .contact button {
     align-self: center;
-    cursor: pointer;
-    background: #ff4757;   /* red color */
-    color: white;          /* text white */
-    padding: 12px 25px;    /* button bada */
-    border: none;          /* border hatao */
-    border-radius: 8px;    /* gol kona */
+    background: #ff4757;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .contact button:hover {
-    background: #e84118;   /* hover pe dark red */
+    background: #e84118;
 }
 
-html {
-    scroll-behavior: smooth;
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+    margin: 25px 0;
 }
+
+.social-links a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+
+/* =========================
+   CV BUTTON
+========================= */
+
+.cv-button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 12px 20px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px;
+    color: white;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 
 @media (max-width: 768px) {
+
+    nav {
+        padding: 15px 5px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
 
     .hero {
         flex-direction: column;
@@ -247,14 +421,13 @@ html {
         height: 220px;
     }
 
-    nav a {
-        margin: 0 8px;
-        font-size: 14px;
-    }
-
     .about {
         margin: 30px 15px;
         padding: 30px 20px;
+    }
+
+    .about h2 {
+        font-size: 32px;
     }
 
     .contact {
@@ -262,114 +435,17 @@ html {
         padding: 30px 20px;
     }
 
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .skill-card {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .cv-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
-
-footer {
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 5px;
-}
-
-.social-links {
-    margin: 25px 0;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 8px;
-    padding: 10px 18px;
-    background-color: darkblue;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.social-links a:hover {
-    background-color: lightblue;
-    color: black;
-}
-
-.cv-button {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 12px 20px;
-    background-color: darkblue;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.cv-button:hover {
-    background-color: lightblue;
-    color: black;
-}
-
-#skills {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-
-#skills h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.skill {
-    background-color: white;
-    max-width: 500px;
-    margin: 15px auto;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.skill h3 {
-    margin: 0;
-    font-size: 22px;
-}
-
-.skill p {
-    font-size: 20px;
-    margin-top: 8px;
-}
-
-.project {
-  background: #1e1e1e;
-  color: white;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.project h3 {
-  color: white;
-  margin-bottom: 10px;
-}
-
-.project p {
-  color: #cccccc;
-  margin-bottom: 15px;
-}
-
-.project a {
-  background: #ff4757;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: bold;
-}
-
-
-
